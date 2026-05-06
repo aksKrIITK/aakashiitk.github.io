@@ -28,7 +28,7 @@ export default function Testimonials() {
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">Testimonials</h2>
-          <p className="text-xl text-slate-600">What clients and colleagues say about working with me</p>
+          <p className="text-xl text-slate-600">What clients and colleagues say about working with me </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
