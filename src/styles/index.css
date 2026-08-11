@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Sora:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+  body {
+    background-color: theme('colors.bg');
+    color: theme('colors.textLight');
+    font-family: theme('fontFamily.poppins');
+    overflow-x: hidden;
+  }
+  ::selection {
+    background-color: theme('colors.accent');
+    color: theme('colors.textLight');
+  }
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: theme('colors.bg2');
+  }
+  ::-webkit-scrollbar-thumb {
+    background: theme('colors.accent');
+    border-radius: 6px;
+  }
+  input::placeholder, textarea::placeholder {
+    color: theme('colors.dim');
+  }
+}
