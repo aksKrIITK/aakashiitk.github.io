@@ -63,11 +63,10 @@ export function Contact() {
     // Standalone Spring Boot Backend API URL
     const backendApiUrl = import.meta.env.VITE_BACKEND_API_URL || '/api/contact';
     const googleSheetWebhook = import.meta.env.VITE_GOOGLE_SHEETS_URL;
-    const targetUrl = backendApiUrl || googleSheetWebhook;
 
     try {
       if (backendApiUrl) {
-        // Standalone Spring Boot REST Backend Submission
+        // Standalone Backend REST Submission
         const res = await fetch(backendApiUrl, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
@@ -102,7 +101,7 @@ export function Contact() {
     } catch (err: any) {
       console.error('Contact form submission error:', err);
       setStatus('error');
-      setStatusMsg(err.message || 'Failed to send message. Please try again or email directly at akskr.iitk@gmail.com.');
+      setStatusMsg(err?.message || 'Failed to send message. Please try again or email directly at akskr.iitk@gmail.com.');
     }
   };
 

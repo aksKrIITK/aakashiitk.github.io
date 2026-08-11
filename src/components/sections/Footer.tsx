@@ -11,7 +11,7 @@ export function Footer() {
           </div>
 
           <div className="flex gap-7 flex-wrap">
-            {['Skills', 'Experience', 'Projects', 'Contact'].map(l => (
+            {['Skills', 'Experience', 'Projects', 'Contact'].map((l) => (
               <a key={l} href={`#${l.toLowerCase()}`} className="font-poppins text-[13px] text-dim no-underline hover:text-accent transition-colors">
                 {l}
               </a>
@@ -22,10 +22,15 @@ export function Footer() {
             {[
               ['GitHub', 'https://github.com/aksKrIITK'],
               ['LinkedIn', 'https://www.linkedin.com/in/aakashkumariitk/'],
-              ['Email', 'mailto:akskr.iitk@gmail.com']
+              ['Email', 'mailto:akskr.iitk@gmail.com'],
             ].map(([l, u]) => (
-              <a key={l} href={u} target="_blank" rel="noopener noreferrer"
-                className="font-poppins text-[13px] text-muted no-underline px-3.5 py-1.5 rounded-md border border-borderW hover:border-borderC hover:text-accent transition-all">
+              <a
+                key={l}
+                href={u}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-poppins text-[13px] text-muted no-underline px-3.5 py-1.5 rounded-md border border-borderW hover:border-borderC hover:text-accent transition-all"
+              >
                 {l}
               </a>
             ))}

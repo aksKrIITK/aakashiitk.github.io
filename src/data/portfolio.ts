@@ -11,9 +11,9 @@ export const PROFILE = {
   location: 'New Delhi, India',
   phone: '+91-6206230851',
   email: 'akskr.iitk@gmail.com',
-  links: { linkedin: '#', github: '#', godizy: 'https://godizy.com', portfolio: '#' },
+  links: { linkedin: 'https://www.linkedin.com/in/aakashkumariitk/', github: 'https://github.com/aksKrIITK', godizy: 'https://godizy.com', portfolio: '#' },
   summary:
-    'AI/Full Stack Engineer with 2+ years shipping end-to-end features — production RAG, LangGraph multi-agent systems, Python/FastAPI backends, Java/Spring Boot, and React/TypeScript frontends — including 1+ year leading a 2-engineer backend team. Founder of Godizy, a live SaaS platform for Indian SMBs with 10 paying customers, built and shipped solo across the full stack. IIT Kanpur graduate (Electrical Engineering) who spent 2 years studying International Politics (JNU) and preparing for India\u2019s civil services exam — research-heavy, high-stakes analytical work that now shows up in how I approach system design and debugging: gather evidence, weigh tradeoffs, then commit.',
+    'AI/Full Stack Engineer with 2+ years shipping end-to-end features — production RAG, LangGraph multi-agent systems, Python/FastAPI backends, Java/Spring Boot, and React/TypeScript frontends — including 1+ year leading a 2-engineer backend team. Founder of Godizy, a live SaaS platform for Indian SMBs with 10 paying customers, built and shipped solo across the full stack. IIT Kanpur graduate (Electrical Engineering) who spent 2 years studying International Politics (JNU) and preparing for India’s civil services exam — research-heavy, high-stakes analytical work that now shows up in how I approach system design and debugging: gather evidence, weigh tradeoffs, then commit.',
 };
 
 // AI / Agentic AI listed first to lead with the AI-engineer positioning
@@ -42,11 +42,11 @@ export const EXPERIENCES = [
     period: 'Jul 2024 – Jun 2026',
     type: 'Full-time',
     description:
-      'Sole backend architect at an early-stage B2B SaaS startup, owning the product\u2019s AI layer end-to-end alongside core backend architecture — RFQ Matching, Seller Matching, Smart Notifications, and Quotation Parsing pipelines — while leading a 2-engineer backend team.',
+      'Sole backend architect at an early-stage B2B SaaS startup, owning the product’s AI layer end-to-end alongside core backend architecture — RFQ Matching, Seller Matching, Smart Notifications, and Quotation Parsing pipelines — while leading a 2-engineer backend team.',
     achievements: [
-      'Built the product\u2019s AI layer end-to-end: RFQ Matching Engine (embedding-based retrieval matching buyer RFQs to sellers, evaluated across 3,000+ RFQs), Seller Matching Engine (scored & ranked across 5,000+ seller records), Smart Notifications, and an RFQ/Quotation Parsing pipeline grounding requirement line items against supplier quotations',
+      'Built the product’s AI layer end-to-end: RFQ Matching Engine (embedding-based retrieval matching buyer RFQs to sellers, evaluated across 3,000+ RFQs), Seller Matching Engine (scored & ranked across 5,000+ seller records), Smart Notifications, and an RFQ/Quotation Parsing pipeline grounding requirement line items against supplier quotations',
       'Sole backend architect — designed data model, service boundaries, and API contracts for six core modules (deal management, chat, notifications, quotation, negotiation, order management) serving multi-tenant clients end to end',
-      'Cut a core reporting API\u2019s response time from 4 minutes to under 10 seconds (~96% reduction) via request throttling and reworking an unindexed batch query, unblocking a repeatedly-missed client SLA',
+      'Cut a core reporting API’s response time from 4 minutes to under 10 seconds (~96% reduction) via request throttling and reworking an unindexed batch query, unblocking a repeatedly-missed client SLA',
       'Reduced p95 latency on high-traffic endpoints by 40% with a Redis read-through caching layer and indexed-lookup rewrites; increased peak-hour throughput 35% by decomposing monolithic order-processing logic into async worker services',
       'Led and mentored 2 junior/fresher backend engineers — code review, architecture pairing, and onboarding onto the service ownership model',
       'Designed secure, JWT-authenticated REST APIs with role-based authorization across client, admin, and staff portals; built resumable document-upload pipelines using AWS S3 pre-signed URLs',

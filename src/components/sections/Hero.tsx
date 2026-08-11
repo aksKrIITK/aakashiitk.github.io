@@ -54,7 +54,7 @@ const HERO_CONCEPTS = [
     subline:
       'That analytical rigor shows up in how I approach system design: IIT Kanpur engineer, JNU-trained researcher, now building AI infrastructure that handles real scale.',
     cta: 'Read my approach →',
-    ctaHref: '#about',
+    ctaHref: '#contact',
   },
 ];
 
@@ -81,11 +81,11 @@ export function Hero() {
   return (
     <section id="home" className="min-h-screen flex flex-col relative overflow-hidden bg-black pt-16">
       {/* Background Text (Deep back) */}
-      <div className="absolute top-[12%] left-1/2 -translate-x-1/2 text-[clamp(120px,25vw,480px)] font-sora font-black text-white/[0.03] blur-[2px] pointer-events-none whitespace-nowrap z-0 select-none tracking-tighter uppercase">
+      <div className="absolute top-[12%] left-1/2 -translate-x-1/2 text-[clamp(120px,25vw,480px)] font-sora font-black text-white/[0.03] blur-[2px] pointer-events-none z-0 select-none tracking-tighter uppercase whitespace-nowrap">
         AAKASH
       </div>
 
-      {/* Hero Image (Bigger & Pulled Down) */}
+      {/* Hero Image */}
       <div className="relative w-full h-[450px] md:h-[520px] flex items-center justify-center z-10 pointer-events-none shrink-0 translate-y-6">
         <div className="relative h-full flex items-center justify-center scale-125">
           <img
@@ -96,7 +96,7 @@ export function Hero() {
         </div>
       </div>
 
-      {/* Content & 3D Rotating Cards Container (Bottom) */}
+      {/* Content & 3D Rotating Cards Container */}
       <div
         onMouseEnter={() => setIsPaused(true)}
         onMouseLeave={() => setIsPaused(false)}
@@ -262,5 +262,3 @@ export function Hero() {
     </section>
   );
 }
-
-
